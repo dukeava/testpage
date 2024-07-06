@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interest Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .calculator {
+            background-color: #d3d3d3;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .calculator input[type="text"] {
+            width: 100px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .calculator button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .calculator button:hover {
+            background-color: #0056b3;
+        }
+        .results {
+            margin-top: 20px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <label>Principal</label>
+        <input type="text" id="principal" value="10000"><br>
+        <label>Interest Rate</label>
+        <input type="text" id="rate" value="2.56"><br>
+        <label>Time</label>
+        <input type="text" id="time" value="8"><br>
+        <button onclick="calculateInterest()">Calculate</button>
+    </div>
+    <div class="results" id="results">
+        <h3>Your Results</h3>
+        <p id="resultText"></p>
+    </div>
+
+   <script src="interestCalculator.js"></script>
+</body>
+</html>
